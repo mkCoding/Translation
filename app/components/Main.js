@@ -11,9 +11,24 @@ var Main = React.createClass({
 <h2>Translation</h2>
 <div className="col-xs-4">
   <label for="ex1">Enter text to translate</label>
-  <input className="form-control" id="ex1" placeholder="Text input" type="text"/>
-  <button className="btn btn-default" type="submit">Translate</button>
+  <form role = "form">
+   <div class = "form-group">
+      <textarea id="fromText" class = "form-control" rows = "3"></textarea>
+   </div>
+</form>
 </div>
+
+<div className="col-xs-4">
+  <label for="ex2" id="ex2">Resulting Text</label>
+  <form role = "form">
+   <div class = "form-group">
+      <textarea id="toText" class = "form-control" rows = "3"></textarea>
+   </div>
+</form>
+</div>
+  
+<button className="btn btn-default" type="submit">Translate</button>
+
 
 
 

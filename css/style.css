@@ -1,11 +1,30 @@
 body{}
 
 .btn{
-/*position: absolute;
-left:400px;
-top:25px;*/
+	position: relative;
+	left:-243px;
+	top:88px;
 }
 
 h2{
 	text-align: center;
+}
+
+#fromText{
+	height:192px;
+	width:500px
+}
+
+#ex2{
+	position:relative;
+	left:245px;
+}
+
+#toText{
+	position: relative;
+	left:243;
+	top:0px;
+
+	height:192px;
+	width:500px
 }
