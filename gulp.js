@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 var eslint = require('gulp-eslint');
+var connect = require('gulp-connect');
 
+var outputDir = '/public';
 gulp.task('lint', function () {
     // ESLint ignores files with "node_modules" paths.
     // So, it's best to have gulp ignore the directory as well.
@@ -18,6 +20,12 @@ gulp.task('lint', function () {
         .pipe(eslint.failAfterError());
 });
 
-gulp.task('default', ['lint'], function () {
-    // This will only run if the lint task is successful...
+gulp.task('connect', connect.server({
+    root: [outputDir],
+    open:{browser: 'Google Chrome'}
+});
+
+
+gulp.task('default', function () {
+    console.log('Gulp is running correctly!');
 });

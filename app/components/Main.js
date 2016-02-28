@@ -29,12 +29,6 @@ var Main = React.createClass({
   
 <button className="btn btn-default" type="submit">Translate</button>
 
-
-
-
-
-
-
 </div>
 );
     }
